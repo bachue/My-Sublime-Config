@@ -5,6 +5,7 @@
 * SideBarEnhancements
 * Block Cursor Everywhere
 * ApplySyntax
+* GitGutter
 
 #### Another Configs
 * Enable Vim Mode by Vintageous
