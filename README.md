@@ -7,6 +7,7 @@
 * ApplySyntax
 * GitGutter
 * FileDiffs
+* BracketHighlighter
 
 #### Another Configs
 * Enable Vim Mode by Vintageous
