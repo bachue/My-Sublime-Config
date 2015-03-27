@@ -1,0 +1,7 @@
+*.cache
+*.merged-ca-bundle
+*.system-ca-bundle
+*.user-ca-bundle
+*.last-run
+*.pyc
+*.log
