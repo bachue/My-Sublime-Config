@@ -4,6 +4,7 @@
 	],
 	"installed_packages":
 	[
+		"ApplySyntax",
 		"Block Cursor Everywhere",
 		"Package Control",
 		"SideBarEnhancements",

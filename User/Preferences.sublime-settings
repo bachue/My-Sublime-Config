@@ -1,22 +1,21 @@
 {
-	"font_size": 14,
-    "font_size": 14,
-	"highlight_modified_tabs": true,
 	"auto_close_tags": true,
 	"bold_folder_labels": true,
 	"copy_with_empty_selection": true,
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
 	"detect_indentation": true,
-	"translate_tabs_to_spaces": true,
-	"use_tab_stops": true,
-    "ensure_newline_at_eof_on_save": true,
-    "enable_hexadecimal_encoding": true,
-    "gpu_window_buffer": "auto",
-    "trim_automatic_white_space": true,
-    "trim_trailing_white_space_on_save": true,
+	"enable_hexadecimal_encoding": true,
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 14,
+	"gpu_window_buffer": "auto",
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage"
-	]
+	],
+	"translate_tabs_to_spaces": true,
+	"trim_automatic_white_space": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_tab_stops": true
 }

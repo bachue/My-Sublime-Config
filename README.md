@@ -4,6 +4,7 @@
 * Vintageous
 * SideBarEnhancements
 * Block Cursor Everywhere
+* ApplySyntax
 
 #### Another Configs
 * Enable Vim Mode by Vintageous
