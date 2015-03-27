@@ -6,6 +6,7 @@
 * Block Cursor Everywhere
 * ApplySyntax
 * GitGutter
+* FileDiffs
 
 #### Another Configs
 * Enable Vim Mode by Vintageous

@@ -6,6 +6,7 @@
 	[
 		"ApplySyntax",
 		"Block Cursor Everywhere",
+		"FileDiffs",
 		"GitGutter",
 		"Package Control",
 		"SideBarEnhancements",
