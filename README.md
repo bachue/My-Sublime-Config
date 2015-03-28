@@ -20,6 +20,7 @@
 * Dockerfile Syntax Highlighting
 * Markdown Extended
 * ARM Assembly
+* Awk
 
 #### Another Configs
 * Enable Vim Mode by Vintageous
