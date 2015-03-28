@@ -10,6 +10,7 @@
 * BracketHighlighter
 * SublimeCodeIntel
 * All Autocomplete
+* EasySettings
 
 #### Another Configs
 * Enable Vim Mode by Vintageous
