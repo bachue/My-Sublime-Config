@@ -14,6 +14,7 @@
 * EasySettings
 * TabsExtra
 * SublimeLog
+* MacTerminal
 
 #### Another Configs
 * Enable Vim Mode by Vintageous
