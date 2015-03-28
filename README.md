@@ -16,6 +16,7 @@
 * SublimeLog
 * MacTerminal
 * AdvancedNewFile
+* DocBlockr
 
 #### Another Configs
 * Enable Vim Mode by Vintageous
