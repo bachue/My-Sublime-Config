@@ -18,6 +18,7 @@
 * AdvancedNewFile
 * DocBlockr
 * Dockerfile Syntax Highlighting
+* Markdown Extended
 
 #### Another Configs
 * Enable Vim Mode by Vintageous
