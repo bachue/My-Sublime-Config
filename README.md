@@ -21,6 +21,7 @@
 * Markdown Extended
 * ARM Assembly
 * Awk
+* RAML Syntax Highlighter
 
 #### Another Configs
 * Enable Vim Mode by Vintageous
