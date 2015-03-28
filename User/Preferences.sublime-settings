@@ -1,5 +1,12 @@
 {
 	"auto_close_tags": true,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		}
+	],
 	"bold_folder_labels": true,
 	"copy_with_empty_selection": true,
 	"default_encoding": "UTF-8",

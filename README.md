@@ -8,6 +8,7 @@
 * GitGutter
 * FileDiffs
 * BracketHighlighter
+* SublimeCodeIntel
 
 #### Another Configs
 * Enable Vim Mode by Vintageous
