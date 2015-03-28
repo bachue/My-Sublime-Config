@@ -4,6 +4,7 @@
 	],
 	"installed_packages":
 	[
+		"All Autocomplete",
 		"ApplySyntax",
 		"Block Cursor Everywhere",
 		"BracketHighlighter",

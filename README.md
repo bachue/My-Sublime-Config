@@ -9,6 +9,7 @@
 * FileDiffs
 * BracketHighlighter
 * SublimeCodeIntel
+* All Autocomplete
 
 #### Another Configs
 * Enable Vim Mode by Vintageous
