@@ -23,6 +23,7 @@
 * Awk
 * RAML Syntax Highlighter
 * RSpec
+* GoSublime
 
 #### Scheme
 * Monokai Bright
