@@ -17,6 +17,7 @@
 * MacTerminal
 * AdvancedNewFile
 * DocBlockr
+* Dockerfile Syntax Highlighting
 
 #### Another Configs
 * Enable Vim Mode by Vintageous
