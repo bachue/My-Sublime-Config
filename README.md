@@ -19,6 +19,7 @@
 * DocBlockr
 * Dockerfile Syntax Highlighting
 * Markdown Extended
+* ARM Assembly
 
 #### Another Configs
 * Enable Vim Mode by Vintageous
