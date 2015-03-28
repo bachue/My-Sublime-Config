@@ -13,6 +13,7 @@
 * All Autocomplete
 * EasySettings
 * TabsExtra
+* SublimeLog
 
 #### Another Configs
 * Enable Vim Mode by Vintageous
