@@ -5,6 +5,7 @@
 * SideBarEnhancements
 * Block Cursor Everywhere
 * ApplySyntax
+* Git
 * GitGutter
 * FileDiffs
 * BracketHighlighter
