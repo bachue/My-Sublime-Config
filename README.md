@@ -24,6 +24,7 @@
 * RAML Syntax Highlighter
 * RSpec
 * GoSublime
+* TrailingSpaces
 
 #### Scheme
 * Monokai Bright
