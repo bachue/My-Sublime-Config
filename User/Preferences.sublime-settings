@@ -8,6 +8,7 @@
 		}
 	],
 	"bold_folder_labels": true,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
 	"copy_with_empty_selection": true,
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",

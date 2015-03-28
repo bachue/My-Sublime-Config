@@ -23,5 +23,9 @@
 * Awk
 * RAML Syntax Highlighter
 
+#### Scheme
+* Monokai Bright
+* Bigger Font
+
 #### Another Configs
 * Enable Vim Mode by Vintageous
