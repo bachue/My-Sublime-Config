@@ -26,6 +26,7 @@
 * GoSublime
 * TrailingSpaces
 * FindKeyConflicts
+* PackageResourceViewer
 
 #### Scheme
 * Monokai Bright
