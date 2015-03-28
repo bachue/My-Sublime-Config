@@ -11,6 +11,7 @@
 * SublimeCodeIntel
 * All Autocomplete
 * EasySettings
+* TabsExtra
 
 #### Another Configs
 * Enable Vim Mode by Vintageous
