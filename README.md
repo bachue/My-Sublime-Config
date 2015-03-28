@@ -25,6 +25,7 @@
 * RSpec
 * GoSublime
 * TrailingSpaces
+* FindKeyConflicts
 
 #### Scheme
 * Monokai Bright

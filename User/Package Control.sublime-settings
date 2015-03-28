@@ -15,6 +15,7 @@
 		"Dockerfile Syntax Highlighting",
 		"EasySettings",
 		"FileDiffs",
+		"FindKeyConflicts",
 		"Git",
 		"GitGutter",
 		"GoSublime",
