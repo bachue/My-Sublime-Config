@@ -22,6 +22,7 @@
 * ARM Assembly
 * Awk
 * RAML Syntax Highlighter
+* RSpec
 
 #### Scheme
 * Monokai Bright
