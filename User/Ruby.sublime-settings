@@ -8,5 +8,6 @@
 		"jbuilder",
 		"thor",
 		"simplecov"
-	]
+	],
+    "tab_size": 2
 }
