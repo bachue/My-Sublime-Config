@@ -27,6 +27,7 @@
 * TrailingSpaces
 * FindKeyConflicts
 * PackageResourceViewer
+* BracketGuard
 
 #### Scheme
 * Monokai Bright
