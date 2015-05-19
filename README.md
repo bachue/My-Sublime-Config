@@ -28,6 +28,7 @@
 * FindKeyConflicts
 * PackageResourceViewer
 * BracketGuard
+* Ruby Slim
 
 #### Scheme
 * Monokai Bright
