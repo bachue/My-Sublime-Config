@@ -29,6 +29,7 @@
 * PackageResourceViewer
 * BracketGuard
 * Ruby Slim
+* Hex Viewer
 
 #### Scheme
 * Monokai Bright
