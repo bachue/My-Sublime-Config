@@ -30,6 +30,7 @@
 * BracketGuard
 * Ruby Slim
 * Hex Viewer
+* Puppet
 
 #### Scheme
 * Monokai Bright
