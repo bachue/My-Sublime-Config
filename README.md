@@ -31,6 +31,7 @@
 * Ruby Slim
 * Hex Viewer
 * Puppet
+* Autotools
 
 #### Scheme
 * Monokai Bright
