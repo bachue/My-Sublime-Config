@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -30,6 +31,8 @@
 		"RAML Syntax Highlighter",
 		"RSpec",
 		"Ruby Slim",
+		"Rust",
+		"RustCodeFormatter",
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
 		"SublimeLog",

@@ -32,6 +32,8 @@
 * Hex Viewer
 * Puppet
 * Autotools
+* Rust
+* RustCodeFormatter
 
 #### Scheme
 * Monokai Bright
