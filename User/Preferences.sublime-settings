@@ -23,6 +23,7 @@
 		"Vintage"
 	],
 	"show_encoding": true,
+	"show_full_path": true,
 	"show_line_endings": true,
 	"show_tab_close_buttons": false,
 	"translate_tabs_to_spaces": true,
