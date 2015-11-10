@@ -3,11 +3,11 @@
 	[
 		"rb",
 		"rabl",
-		"thor",
-		"podspec",
-		"simplecov",
 		"jbuilder",
-		"rake"
+		"simplecov",
+		"podspec",
+		"rake",
+		"thor"
 	],
 	"tab_size": 2
 }
