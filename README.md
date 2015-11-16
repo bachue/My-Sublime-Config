@@ -34,6 +34,7 @@
 * Autotools
 * Rust
 * RustCodeFormatter
+* Gem Browser
 
 #### Scheme
 * Monokai Bright
