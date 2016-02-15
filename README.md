@@ -35,6 +35,7 @@
 * Rust
 * RustCodeFormatter
 * Gem Browser
+* Better CoffeeScript
 
 #### Scheme
 * Monokai Bright
