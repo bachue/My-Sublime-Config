@@ -1,5 +1,5 @@
 {
-    "env": {"GOPATH": "$HOME/Projects/go_projects"},
+    "env": {"GOPATH": "$HOME/GoEnv"},
     "autocomplete_builtins": true,
     "autocomplete_suggest_imports": true,
     "autocomplete_closures": true,
