@@ -27,6 +27,7 @@
 		"*.ttf",
 		"*.zip",
 		"*~",
+		"vendor/**",
 		"log/**",
 		"node_modules/**",
 		"tmp/**"
