@@ -37,6 +37,8 @@
 * Gem Browser
 * Better CoffeeScript
 * SCSS
+* INI
+* Nginx
 
 #### Scheme
 * Monokai Bright
