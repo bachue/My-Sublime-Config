@@ -39,6 +39,7 @@
 * SCSS
 * INI
 * Nginx
+* Surround
 
 #### Scheme
 * Monokai Bright
