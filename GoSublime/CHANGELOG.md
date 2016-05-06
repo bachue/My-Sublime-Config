@@ -9,6 +9,12 @@
 GoSublime Changes
 -----------------
 
+## 16.05.03-2
+	* fallback to the internal MarGo fmt if `fmt_cmd` fails
+
+## 16.05.03-1
+	* fix incomplete gocode update
+
 ## 16.05.01-1
 	* update gocode
 	* add struct fields to the declarations palettes
