@@ -5,6 +5,7 @@ from gosubl import gsq
 from gosubl import sh
 import atexit
 import base64
+import glob
 import hashlib
 import json
 import os
@@ -22,6 +23,18 @@ PROC_ATTR_NAME = 'mg9.proc'
 TAG = about.VERSION
 INSTALL_VERSION = about.VERSION
 INSTALL_EXE = about.MARGO_EXE
+DEFAULT_EXT_SRC = '''
+package gosublime
+
+import (
+	"disposa.blue/margo"
+)
+
+func init() {
+	margo.Configure(func(o *margo.Opts) {
+	})
+}
+'''.lstrip()
 
 def gs_init(m={}):
 	global INSTALL_VERSION
@@ -38,7 +51,7 @@ def gs_init(m={}):
 		INSTALL_EXE = margo_exe
 
 	aso_install_vesion = gs.aso().get('install_version', '')
-	f = lambda: install(aso_install_vesion, False)
+	f = lambda: install(aso_install_vesion, bool(ext_main_file()))
 	gsq.do('GoSublime', f, msg='Installing MarGo', set_status=False)
 
 class Request(object):
@@ -157,12 +170,18 @@ def install(aso_install_vesion, force_install, _reinstall=False):
 		gs.notify('GoSublime', 'Installing MarGo')
 		start = time.time()
 
-		cmd = sh.Command(['go', 'build', '-v', '-x', '-o', INSTALL_EXE, 'gosubli.me/margo'])
+		cmd = sh.Command([
+			'go', 'build',
+			'-tags', 'gosublime' if ext_main_file() else '',
+			'-v',
+			'-o', INSTALL_EXE,
+			'disposa.blue/cmd/margo',
+		])
 		cmd.wd = gs.home_dir_path('bin')
 		cmd.env = {
 			'CGO_ENABLED': '0',
 			'GOBIN': '',
-			'GOPATH': gs.dist_path(),
+			'GOPATH': install_gopath(),
 		}
 
 		ev.debug('%s.build' % DOMAIN, {
@@ -171,7 +190,7 @@ def install(aso_install_vesion, force_install, _reinstall=False):
 		})
 
 		cr = cmd.run()
-		m_out = 'cmd: `%s`\nstdout: `%s`\nstderr: `%s`\nexception: `%s`' % (
+		m_out = 'cmd: `%s`\nstdout: `\n%s\n`\nstderr: `\n%s\n`\nexception: `%s`' % (
 			cr.cmd_lst,
 			cr.out.strip(),
 			cr.err.strip(),
@@ -263,6 +282,34 @@ def install(aso_install_vesion, force_install, _reinstall=False):
 			report_x()
 
 	return m_out
+
+def ext_pkg_path(*a):
+	return gs.user_path('src', 'gosublime', *a)
+
+def install_gopath():
+	return gs.user_path() + os.pathsep + gs.dist_path()
+
+def ext_main_file(install=False):
+	src_dir = ext_pkg_path()
+
+	def ext_fn():
+		l = sorted(glob.glob('%s/*.go' % src_dir))
+		return l[0] if l else ''
+
+	fn = ext_fn()
+	if fn or not install:
+		return fn
+
+	try:
+		gs.mkdirp(src_dir)
+		with open('%s/gosublime.go' % src_dir, 'x') as f:
+			f.write(DEFAULT_EXT_SRC)
+	except FileExistsError:
+		pass
+	except Exception:
+		gs.error_traceback(DOMAIN, status_txt='Cannot create default extension package')
+
+	return ext_fn()
 
 def calltip(fn, src, pos, quiet, f):
 	tid = ''
