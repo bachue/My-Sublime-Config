@@ -40,6 +40,7 @@
 * INI
 * Nginx
 * Surround
+* Handlebars
 
 #### Scheme
 * Monokai Bright
