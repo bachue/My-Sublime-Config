@@ -41,6 +41,7 @@
 * Nginx
 * Surround
 * Handlebars
+* Syslog
 
 #### Scheme
 * Monokai Bright
