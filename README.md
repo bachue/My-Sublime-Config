@@ -42,6 +42,7 @@
 * Surround
 * Handlebars
 * Syslog
+* ActionScript 3
 
 #### Scheme
 * Monokai Bright
