@@ -43,6 +43,7 @@
 * Handlebars
 * Syslog
 * ActionScript 3
+* Text Pastry
 
 #### Scheme
 * Monokai Bright
