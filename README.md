@@ -44,6 +44,7 @@
 * Syslog
 * ActionScript 3
 * Text Pastry
+* ThriftSyntax
 
 #### Scheme
 * Monokai Bright
