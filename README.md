@@ -33,7 +33,6 @@
 * Puppet
 * Autotools
 * Rust
-* RustCodeFormatter
 * Gem Browser
 * Better CoffeeScript
 * SCSS
