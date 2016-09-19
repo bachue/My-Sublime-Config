@@ -27,10 +27,12 @@
 		"*.ttf",
 		"*.zip",
 		"*~",
-		"vendor/**",
+		".glide/**",
+		"/Users/rong/Projects/tassadar/tassadar",
 		"log/**",
 		"node_modules/**",
-		"tmp/**"
+		"tmp/**",
+		"vendor/**"
 	],
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",

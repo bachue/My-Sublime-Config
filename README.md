@@ -44,6 +44,8 @@
 * ActionScript 3
 * Text Pastry
 * ThriftSyntax
+* TOML
+* Cucumber
 
 #### Scheme
 * Monokai Bright

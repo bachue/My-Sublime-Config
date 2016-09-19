@@ -16,6 +16,7 @@
 		"Block Cursor Everywhere",
 		"BracketGuard",
 		"BracketHighlighter",
+		"Cucumber",
 		"DocBlockr",
 		"Dockerfile Syntax Highlighting",
 		"EasySettings",
@@ -48,6 +49,7 @@
 		"TabsExtra",
 		"Text Pastry",
 		"ThriftSyntax",
+		"TOML",
 		"TrailingSpaces",
 		"Vintageous"
 	]
