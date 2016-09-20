@@ -14,7 +14,6 @@
 * EasySettings
 * TabsExtra
 * SublimeLog
-* MacTerminal
 * AdvancedNewFile
 * DocBlockr
 * Dockerfile Syntax Highlighting
