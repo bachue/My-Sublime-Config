@@ -45,6 +45,7 @@
 * ThriftSyntax
 * TOML
 * Cucumber
+* ProjectManager
 
 #### Scheme
 * Monokai Bright
