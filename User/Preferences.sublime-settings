@@ -27,8 +27,6 @@
 		"*.ttf",
 		"*.zip",
 		"*~",
-		".glide/**",
-		"/Users/rong/Projects/tassadar/tassadar",
 		"log/**",
 		"node_modules/**",
 		"tmp/**",
