@@ -7,3 +7,4 @@
 *.log
 /User/GoSublime/osx-x64/log.txt
 /User/Projects
+/User/encoding_cache.json
