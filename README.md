@@ -46,6 +46,7 @@
 * TOML
 * Cucumber
 * ProjectManager
+* Matlab Completions
 
 #### Scheme
 * Monokai Bright
