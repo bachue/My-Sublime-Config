@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[for ${1:i} = ${2:1:n}
+    ${3:body}
+end
+]]></content>
+    <tabTrigger>for</tabTrigger>
+    <scope>source.matlab , source.octave</scope>
+    <description>for … end</description>
+</snippet>
