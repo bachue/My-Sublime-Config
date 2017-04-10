@@ -47,6 +47,7 @@
 * Cucumber
 * ProjectManager
 * Matlab Completions
+* Protocol Buffer Syntax
 
 #### Scheme
 * Monokai Bright
