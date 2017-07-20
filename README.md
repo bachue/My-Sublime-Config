@@ -48,6 +48,7 @@
 * ProjectManager
 * Matlab Completions
 * Protocol Buffer Syntax
+* Kotlin
 
 #### Scheme
 * Monokai Bright
