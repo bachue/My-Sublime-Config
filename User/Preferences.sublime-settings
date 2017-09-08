@@ -38,6 +38,7 @@
 	"copy_with_empty_selection": true,
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
+	"draw_white_space": "all",
 	"enable_hexadecimal_encoding": true,
 	"ensure_newline_at_eof_on_save": true,
 	"font_size": 14,
