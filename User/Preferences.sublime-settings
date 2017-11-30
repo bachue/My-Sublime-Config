@@ -47,7 +47,6 @@
 	"ignore_vcs_packages": true,
 	"ignored_packages":
 	[
-		"ActionScript",
 		"Vintage"
 	],
 	"show_encoding": true,

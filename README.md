@@ -17,7 +17,6 @@
 * AdvancedNewFile
 * DocBlockr
 * Dockerfile Syntax Highlighting
-* Markdown Extended
 * ARM Assembly
 * Awk
 * RAML Syntax Highlighter
@@ -40,7 +39,6 @@
 * Surround
 * Handlebars
 * Syslog
-* ActionScript 3
 * Text Pastry
 * ThriftSyntax
 * TOML

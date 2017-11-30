@@ -5,7 +5,6 @@
 	],
 	"installed_packages":
 	[
-		"ActionScript 3",
 		"AdvancedNewFile",
 		"All Autocomplete",
 		"ApplySyntax",
@@ -34,7 +33,6 @@
 		"HexViewer",
 		"INI",
 		"Kotlin",
-		"Markdown Extended",
 		"Matlab Completions",
 		"nginx",
 		"Package Control",
