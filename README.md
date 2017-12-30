@@ -47,6 +47,8 @@
 * Matlab Completions
 * Protocol Buffer Syntax
 * Kotlin
+* Swift
+* Bison
 
 #### Scheme
 * Monokai Bright
