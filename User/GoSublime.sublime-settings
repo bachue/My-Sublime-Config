@@ -1,8 +1,0 @@
-{
-    "env": {"GOPATH": "$HOME/GoEnv"},
-    "autocomplete_builtins": true,
-    "autocomplete_suggest_imports": true,
-    "autocomplete_closures": true,
-    "fmt_cmd": ["goimports"],
-    "fmt_enabled": true
-}

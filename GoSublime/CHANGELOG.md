@@ -1,22 +1,26 @@
-**WARNING:**
+**Donate:**
 
-If you automatically update GoSublime (or any other plugin with run-time state)
-you run the risk of breaking the plugin or crashing Sublime Text,
-because Sublime Text (and Package Control) cannot update such plugins properly without a restart.
+I'm currently toying with the idea of doing Open Source development full or part-time.
 
-You are advised to only *manually* update such plugins and *restart Sublime Text*
+If you find GoSublime useful and would like to support me and future development of GoSublime,
+please donate via one of the available methods on https://github.com/DisposaBoy/GoSublime#donations
+or reach out to disposaboy@dby.me to discuss other options.
+
+
 
 **Note:**
 
-* It is assumed that you have read and understood the contents of SUPPORT.md
-* You may need to restart Sublime Text after GoSublime updates
-* If you use the `fmt_cmd` setting with `goimports` or any other slow command
-   you should read and understand the `ipc_timeout` setting documented in `GoSublime.sublime-settings`
-
+If you use the current implementation of margo extensions and get a compilation error referencing the import path `disposa.blue/margo`, update your extension package to use the new path `gosublime/margo` instead.
 
 GoSublime Changes
 -----------------
 
+## 18.01.17
+	* update gocode
+	* sync the settings when the active view changes to avoid them going out-of-sync when switching projects
+	* add support for exporting env vars into ST.
+	  see docs for the setting `export_env_vars` (`ctrl+., ctrl+4`, `super+., super+4` on mac)
+	* sync all project settings, not just `env`
 
 ## 17.12.17-1
 	* fix failure to list some packges in the imports palette
