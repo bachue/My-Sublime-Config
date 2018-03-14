@@ -1,21 +1,47 @@
 **Donate:**
 
-I'm currently toying with the idea of doing Open Source development full or part-time.
-
 If you find GoSublime useful and would like to support me and future development of GoSublime,
 please donate via one of the available methods on https://github.com/DisposaBoy/GoSublime#donations
-or reach out to disposaboy@dby.me to discuss other options.
 
 
+**margo:**
 
-**Note:**
+The new version of margo is close to being ready for real usage.
+If you'd like to test it out, press `ctrl+.`,`ctrl+x` or `cmd+.`,`cmd+x`
+to open the extension file and then save it and restart sublime text.
 
-If you use the current implementation of margo extensions and get a compilation error referencing the import path `disposa.blue/margo`, update your extension package to use the new path `gosublime/margo` instead.
+Please make sure to read all the comments, as enabling it will affect GoSublime features.
 
-GoSublime Changes
------------------
+**Changes:**
 
-## 18.01.17
+## 18.03.05-1
+	* if no status is set, the status markers (dots) are no longer shown
+	* sh-bootstrap.go is now built with `go build` to improve startup time in go1.10
+	* path handling on Windows was improved
+	* linter support should now be almost complete.
+	  * add support for displaying issues via `ctrl+.`,`ctrl+e` or `cmd+.`,`cmd+e`
+	  * errors for all files in the package are tracked
+	  * the error count in the status bar is always visible if there are errors in other files
+
+	  see the example extension https://github.com/disposablue/margo/blob/master/extension-example/extension-example.go for examples of builtin linters.
+
+
+## 18.02.17-2
+	* stop linking sqlite3 to avoid cgo-related compilation errors
+
+## 18.02.17-1
+	* fix a compilation error introduced in r18.02.16-1
+
+## 18.02.16-1
+	* The new version of margo is close to being ready for real usage.
+	  If you'd like to test it out, press `ctrl+.`,`ctrl+x` or `cmd+.`,`cmd+x`
+	  to open the extension file and then save it or restart sublime text
+	* Highlights:
+		* less dependence on Python, so development should be a lot easier going forward
+		* it comes with integrated support for GoImports
+		* gocode integration now supports more options like autobuild, showing function params and autocompleting packages that have not been imported
+
+## 18.01.17-1
 	* update gocode
 	* sync the settings when the active view changes to avoid them going out-of-sync when switching projects
 	* add support for exporting env vars into ST.

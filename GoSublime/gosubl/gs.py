@@ -1,7 +1,7 @@
 # Sublime modelines - https://github.com/SublimeText/Modelines
 # sublime: translate_tabs_to_spaces false; rulers [100,120]
 
-from gosubl import about
+from . import about
 from subprocess import Popen, PIPE
 import copy
 import datetime
@@ -100,7 +100,7 @@ _default_settings = {
 	"export_env_vars": [],
 }
 _settings = copy.copy(_default_settings)
-
+_mg_override_settings = {}
 
 CLASS_PREFIXES = {
 	'const': u'\u0196',
@@ -153,7 +153,7 @@ IGNORED_SCOPES = frozenset([
 	'constant.other.rune.go',
 ])
 
-VFN_ID_PAT = re.compile(r'^(?:gs\.)?view://(\d+)(.*?)$', re.IGNORECASE)
+VFN_ID_PAT = re.compile(r'^(?:gs\.)?view(?:#|://)(\d+)(.*?)$', re.IGNORECASE)
 ROWCOL_PAT = re.compile(r'^[:]*(\d+)(?:[:](\d+))?[:]*$')
 
 USER_DIR = os.path.expanduser('~')
@@ -171,11 +171,11 @@ def apath(fn, cwd=None):
 	if not os.path.isabs(fn):
 		if not cwd:
 			cwd = getwd()
-		fn = os.path.join(cwd, fn)
+		fn = file_path(cwd, fn)
 	return os.path.normcase(os.path.normpath(fn))
 
 def temp_dir(subdir=''):
-	tmpdir = os.path.join(tempfile.gettempdir(), NAME, subdir)
+	tmpdir = file_path(tempfile.gettempdir(), NAME, subdir)
 	err = ''
 	try:
 		os.makedirs(tmpdir)
@@ -233,6 +233,8 @@ def settings_dict():
 		for k in d:
 			v = attr(k, None)
 			m[k] = v if v is not None else d[k]
+
+	m.update(_mg_override_settings)
 
 	nv = dval(copy.copy(_settings.get('env')), {})
 	nv.update(dval(project_settings.get('env'), {}))
@@ -399,7 +401,7 @@ def env(m={}):
 
 	for s in lst(e.get('GOROOT', ''), e.get('GOPATH', '').split(os.pathsep)):
 		if s:
-			s = os.path.join(s, 'bin')
+			s = file_path(s, 'bin')
 			if s not in add_path:
 				add_path.append(s)
 
@@ -490,6 +492,15 @@ def view_src(view):
 	if view:
 		return view.substr(sublime.Region(0, view.size()))
 	return ''
+
+def active_view(win=None, view=None):
+	if view is not None:
+		return view
+
+	if win is None:
+		win = sublime.active_window()
+
+	return win.active_view()
 
 def win_view(vfn=None, win=None):
 	if not win:
@@ -650,7 +661,7 @@ def list_dir_tree(dirname, filter, exclude_prefix=('.', '_')):
 				continue
 
 			basename = fn.lower()
-			fn = os.path.join(dirname, fn)
+			fn = file_path(dirname, fn)
 
 			if os.path.isdir(fn):
 				lst.extend(list_dir_tree(fn, filter, exclude_prefix))
@@ -736,11 +747,25 @@ def packages_dir():
 		set_attr('gs.packages_dir', fn)
 	return fn
 
+def split_nix_paths(*a):
+	res = []
+	if a and a[0].startswith('/'):
+		res.append('/')
+
+	for path in a:
+		for p in str(path).split('/'):
+			if p:
+				res.append(p)
+	return res
+
+def file_path(*a):
+	return os.path.join(*split_nix_paths(*a))
+
 def dist_path(*a):
-	return os.path.join(packages_dir(), 'GoSublime', *a)
+	return file_path(packages_dir(), 'GoSublime', *a)
 
 def user_path(*a):
-	return os.path.join(packages_dir(), 'User', 'GoSublime', *a)
+	return file_path(packages_dir(), 'User', 'GoSublime', *a)
 
 def mkdirp(fn):
 	try:
@@ -749,7 +774,7 @@ def mkdirp(fn):
 		pass
 
 def _home_path(*a):
-	return os.path.join(packages_dir(), 'User', 'GoSublime', about.PLATFORM, *a)
+	return file_path(packages_dir(), 'User', 'GoSublime', about.PLATFORM, *a)
 
 def home_dir_path(*a):
 	fn = _home_path(*a)
@@ -834,7 +859,7 @@ def which(cmd):
 
 	seen = {}
 	for p in getenv('PATH', '').split(os.pathsep):
-		p = os.path.join(p, cmd)
+		p = file_path(p, cmd)
 		if p not in seen and which_ok(p):
 			return p
 

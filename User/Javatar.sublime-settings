@@ -1,0 +1,31 @@
+{
+	"jdk_version":
+	{
+		"JDK1.7.0u80":
+		{
+			"path": "/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin",
+			"update": "80",
+			"version": "1.7.0"
+		},
+		"JDK1.8.0u144":
+		{
+			"path": "/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/bin",
+			"update": "144",
+			"version": "1.8.0"
+		},
+		"use": ""
+	},
+	"message_id": 20,
+	"project_data":
+	{
+		"9":
+		{
+			"folders":
+			[
+				{
+					"path": "/private/tmp/springinaction/Chapter_04/concert"
+				}
+			]
+		}
+	}
+}

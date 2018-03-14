@@ -9,7 +9,6 @@
 * GitGutter
 * FileDiffs
 * BracketHighlighter
-* SublimeCodeIntel
 * All Autocomplete
 * EasySettings
 * TabsExtra

@@ -1,7 +1,11 @@
 [
 	{
-		"caption": "GoSublime: Edit MarGo extension",
-		"command": "gs_open_margo_extension_package",
+		"caption": "GoSublime: Restart Margo",
+		"command": "margo_restart_agent",
+	},
+	{
+		"caption": "GoSublime: Edit Margo Extension",
+		"command": "margo_open_extension",
 	},
 	{
 		"caption": "GoSublime: Add/Remove package",
@@ -19,9 +23,8 @@
 		"args": {"dir": "."}
 	},
 	{
-		"caption": "GoSublime: Show errors",
-		"command": "gs_palette",
-		"args": {"palette": "errors", "direct": true}
+		"caption": "GoSublime: Show Issues",
+		"command": "margo_issues",
 	},
 	{
 		"caption": "GoSublime: Go to last bookmark",
