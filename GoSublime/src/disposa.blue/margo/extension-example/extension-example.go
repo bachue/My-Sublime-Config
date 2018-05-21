@@ -12,6 +12,15 @@ func Margo(ma mg.Args) {
 	// they are run in the specified order
 	// and should ideally not block for more than a couple milliseconds
 	ma.Store.Use(
+		// by default, events (e.g. ViewSaved) are triggered in all files
+		// uncomment the reducer below to restict event to Go(-lang) files
+		// please note, however, that this mode is not tested
+		// and saving a non-go file will not trigger linters, etc. for that go pkg
+		//
+		// mg.Reduce(func(mx *mg.Ctx) *mg.State {
+		// 	return mx.SetConfig(mx.Config.EnabledForLangs("go"))
+		// }),
+
 		// add the day and time to the status bar
 		// DayTimeStatus,
 
@@ -36,8 +45,16 @@ func Margo(ma mg.Args) {
 			ShowFuncParams: true,
 		},
 
+		// add some default context aware-ish snippets
+		golang.Snippets,
+
+		// add our own snippets
+
 		// check the file for syntax errors
 		&golang.SyntaxCheck{},
+
+		// add our own snippets
+		MySnippets,
 
 		// run `go install` on save
 		// or use GoInstallDiscardBinaries which will additionally set $GOBIN
@@ -56,6 +73,12 @@ func Margo(ma mg.Args) {
 
 		// run `golint` on save
 		// &golang.Linter{Name: "golint", Label: "Go/Lint"},
+
+		// run gometalinter on save
+		// &golang.Linter{Name: "gometalinter", Args: []string{
+		// 	"--disable=gas",
+		// 	"--fast",
+		// }},
 	)
 }
 
@@ -81,3 +104,21 @@ var DayTimeStatus = mg.Reduce(func(mx *mg.Ctx) *mg.State {
 	}
 	return mx.AddStatus(now.Format(format))
 })
+
+// MySnippets is a slice of functions returning our own snippets
+var MySnippets = golang.SnippetFuncs{
+	func(cx *golang.CompletionCtx) []mg.Completion {
+		// if we're not in a block (i.e. function), do nothing
+		if !cx.Scope.Is(golang.BlockScope) {
+			return nil
+		}
+
+		return []mg.Completion{
+			{
+				Query: "if err",
+				Title: "err != nil { return }",
+				Src:   "if ${1:err} != nil {\n\treturn $0\n}",
+			},
+		}
+	},
+}
