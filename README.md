@@ -48,6 +48,7 @@
 * Kotlin
 * Swift
 * Bison
+* Babel
 
 #### Scheme
 * Monokai Bright
