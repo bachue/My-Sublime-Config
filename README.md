@@ -49,6 +49,7 @@
 * Swift
 * Bison
 * Babel
+* Rust Enhanced
 
 #### Scheme
 * Monokai Bright

@@ -47,6 +47,7 @@
 	"ignore_vcs_packages": true,
 	"ignored_packages":
 	[
+		"Rust",
 		"Vintage"
 	],
 	"show_encoding": true,
