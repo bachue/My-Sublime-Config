@@ -1,3 +1,4 @@
 {
-    "rust_phantom_style": "popup"
+    "rust_phantom_style": "popup",
+    "rust_message_status_bar": true
 }
