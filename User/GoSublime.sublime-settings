@@ -3,6 +3,7 @@
     "autocomplete_builtins": true,
     "autocomplete_suggest_imports": true,
     "autocomplete_closures": true,
+    "use_named_imports": true,
     "fmt_cmd": ["goimports"],
     "fmt_enabled": true
 }
