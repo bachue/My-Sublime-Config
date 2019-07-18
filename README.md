@@ -50,7 +50,6 @@
 * Bison
 * Babel
 * Rust Enhanced
-* Terminus
 
 #### Scheme
 * Monokai Bright
