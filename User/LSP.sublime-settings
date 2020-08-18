@@ -1,0 +1,22 @@
+{
+    "auto_show_diagnostics_panel": "never",
+    "auto_show_diagnostics_panel_level": 4,
+    "show_diagnostics_count_in_view_status": true,
+    "log_debug": true,
+    "log_stderr": true,
+	"clients":
+	{
+		"rust-analyzer":
+		{
+			"enabled": true,
+            "command": ["rust-analyzer"],
+		},
+        "gopls": {
+            "enabled": true,
+            "syntaxes": [
+              "Packages/Go/Go.sublime-syntax",
+              "Packages/GoSublime/syntax/GoSublime-Go.sublime-syntax",
+            ]
+        }
+	}
+}

@@ -19,7 +19,6 @@
 * ARM Assembly
 * Awk
 * RAML Syntax Highlighter
-* RSpec
 * GoSublime
 * TrailingSpaces
 * FindKeyConflicts
@@ -50,6 +49,7 @@
 * Bison
 * Babel
 * Rust Enhanced
+* LSP
 
 #### Scheme
 * Monokai Bright
